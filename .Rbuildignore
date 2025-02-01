@@ -1,2 +1,5 @@
+^renv$
+^renv\.lock$
 ^pukRhelpers\.Rproj$
 ^\.Rproj\.user$
+^LICENSE\.md$
