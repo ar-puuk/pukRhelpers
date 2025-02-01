@@ -1,5 +1,5 @@
 Package: pukRhelpers
-Title: Helper Functions for `pukR` as in My Workflows.
+Title: Helper Functions for `pukR` as in My Workflows
 Version: 0.0.0.9000
 Authors@R: 
     person("Pukar", "Bhandari", , "pukar.bhandari@outlook.com", role = c("aut", "cre"),
