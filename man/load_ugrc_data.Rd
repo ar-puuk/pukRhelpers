@@ -15,9 +15,6 @@ load_ugrc_data(table_name, as_sf = TRUE)
 An \code{sf} object or a data frame containing the data from the specified table.
 }
 \description{
-Load Dataset from UGRC SGID
-}
-\details{
 Loads a dataset from the UGRC SGID database. By default, the dataset is returned as an \code{sf} object for spatial data analysis.
 }
 \examples{

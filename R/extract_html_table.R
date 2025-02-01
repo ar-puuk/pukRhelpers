@@ -24,7 +24,7 @@ extract_html_table <- function(html_file, anchor_id) {
   page <- rvest::read_html(html_file)
 
   # Find the anchor tag with the specified name attribute
-  anchor_node <- page %>% rvest::html_node(xpath = base::paste0("//a[@name='", anchor_id, "']"))
+  anchor_node <- page |> rvest::html_node(xpath = base::paste0("//a[@name='", anchor_id, "']"))
 
   # Find the next table following the anchor tag
   if (!base::is.null(anchor_node)) {

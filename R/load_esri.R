@@ -36,18 +36,18 @@ load_esri <- function(furl, ..., id = NULL) {
   layer_info <- server$layers
 
   # Check if id is specified
-  if (is.null(id)) {
+  if (base::is.null(id)) {
     # Display available layers
-    cat("Available Layers:\n\n")
-    cat(sprintf("%-3s %-30s\n", "ID", "Name"))
-    for (i in seq_along(layer_info$id)) {
-      cat(sprintf("%-3s %-30s\n", paste0(layer_info$id[i], ":"), layer_info$name[i]))
+    base::cat("Available Layers:\n\n")
+    base::cat(base::sprintf("%-3s %-30s\n", "ID", "Name"))
+    for (i in base::seq_along(layer_info$id)) {
+      base::cat(base::sprintf("%-3s %-30s\n", base::paste0(layer_info$id[i], ":"), layer_info$name[i]))
     }
 
-    cat("\n")
+    base::cat("\n")
 
     # Prompt user for id
-    id <- as.integer(readline("Enter ID of the layer you want to download: "))
+    id <- base::as.integer(base::readline("Enter ID of the layer you want to download: "))
 
     # Check if entered id is valid
     while (!(id %in% layer_info$id)) {
@@ -56,7 +56,7 @@ load_esri <- function(furl, ..., id = NULL) {
   }
 
   # Get the index of the specified id
-  index <- which(layer_info$id == id)
+  index <- base::which(layer_info$id == id)
 
   # Extract the layer based on the specified id
   layer <- arcgislayers::get_layer(server, id = id)

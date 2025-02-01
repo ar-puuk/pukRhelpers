@@ -17,6 +17,7 @@ Imports:
     DBI,
     dplyr,
     lwgeom,
+    rlang,
     RPostgreSQL,
     rvest,
     sf,

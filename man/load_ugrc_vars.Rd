@@ -10,14 +10,13 @@ load_ugrc_vars()
 A data frame containing two columns: \code{table_schema} and \code{table_name}, listing the schemas and tables in the SGID database.
 }
 \description{
-Load List of Datasets from UGRC SGID
-}
-\details{
 Retrieves a list of available datasets in the UGRC SGID database, including their schema and table names.
 }
 \examples{
+\dontrun{
 # Check list of available datasets
 ugrc_vars <- load_ugrc_vars()
 View(ugrc_vars)
+}
 
 }
