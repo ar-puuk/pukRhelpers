@@ -1,10 +1,10 @@
 Package: pukRhelpers
-Title: What the Package Does (One Line, Title Case)
+Title: Helper Functions for `pukR` as in My Workflows.
 Version: 0.0.0.9000
 Authors@R: 
     person("Pukar", "Bhandari", , "pukar.bhandari@outlook.com", role = c("aut", "cre"),
     comment = c(ORCID = "0000-0002-1043-2937"))
-Description: What the package does (one paragraph).
+Description: This package contains a set of random helper functions that I created to help me with my various data analysis tasks.
 License: GPL (>= 3) + file LICENSE
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
