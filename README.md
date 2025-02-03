@@ -43,13 +43,25 @@ Once you’ve installed the package, you can start using its functions immediate
 
 Here is an example of using one of the functions in pukRhelpers:
 
-``` r
+```r
 # Work in progress
 ```
 
 ### Available Functions
 
 For a full list of functions and examples, check out the package [documentation](https://ar-puuk.github.io/pukRhelpers/reference/).
+
+-   `convert_fgb_to_gdb()`: Convert FlatGeoBuf (FGB) Files to Geodatabase (GDB) Layers
+-   `convert_xml_html()`: Convert XML to HTML using XSLT
+-   `extract_html_table()`: Extract table following a specific anchor tag by name attribute
+-   `geo_split_lines()`: Split Lines by Maximum Length (Credit: [dblodgett-usgs](https://gist.github.com/dblodgett-usgs))
+-   `load_esri()`: Load and Query an ESRI Feature Service Layer
+-   `load_kml_sf()`: Convert KML to Simple Features (sf) Object with Preserved Attributes (Credit: [mdsumner](https://gist.github.com/mdsumner))
+-   `load_packages()`: Load and Install R Packages
+-   `load_ugrc_data()`: Load Dataset from UGRC SGID
+-   `load_ugrc_vars()`: Load List of Datasets from UGRC SGID
+-   `st_aggregate()`: Aggregate sf objects (Credit: [rCarto](https://gist.github.com/rCarto))
+-   `st_split_lines()`: Split Lines by Maximum Length (Credit: [dblodgett-usgs](https://gist.github.com/dblodgett-usgs))
 
 ## **Contributing**
 
