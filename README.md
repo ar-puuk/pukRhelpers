@@ -46,7 +46,7 @@ library(pukRhelpers)
 
 Once you’ve installed the package, you can start using its functions immediately.
 
-Here is an example of using one of the functions in pukRhelpers:
+Here is an example of using one of the functions in `pukRhelpers`:
 
 ```r
 # Work in progress
