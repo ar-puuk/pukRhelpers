@@ -42,7 +42,7 @@ st_split_lines <- function(input_lines, max_length, id = "ID") {
   input_lines[["geom_len"]] <- base::as.numeric(input_lines[["geom_len"]])
 
   too_long <- input_lines |>
-    dplyr::select(input_lines, id, geom_column, geom_len) |>
+    dplyr::select(id, geom_column, geom_len) |>
     dplyr::filter(geom_len >= max_length)
 
   base::rm(input_lines) # just to control memory usage in case this is big.

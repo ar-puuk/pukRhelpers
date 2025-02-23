@@ -31,6 +31,11 @@ remotes::install_github("ar-puuk/pukRhelpers")
 pak::pak("ar-puuk/pukRhelpers")
 ```
 
+### Install from `r-universe`
+``` r
+install.packages('pukRhelpers', repos = 'https://ar-puuk.r-universe.dev')
+```
+
 After installation, load the package with:
 
 ``` r
