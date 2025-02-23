@@ -70,7 +70,7 @@ For a full list of functions and examples, check out the package [documentation]
 
 ## **Contributing**
 
-Contributions are welcome! If you have any suggestions or improvements, feel free to open an issue or submit a pull request.
+Contributions are welcome! If you have any suggestions or improvements, feel free to [open an issue](https://github.com/ar-puuk/pukRhelpers/issues/new) or submit a [pull request](https://github.com/ar-puuk/pukRhelpers/compare).
 
 ### How to contribute
 
