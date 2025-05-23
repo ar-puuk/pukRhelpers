@@ -3,9 +3,8 @@
 [![License](https://img.shields.io/github/license/ar-puuk/pukRhelpers)](https://opensource.org/license/GPL-3-0)
 
 <!-- badges: start -->
-
-[![Codecov test coverage](https://codecov.io/gh/ar-puuk/pukRhelpers/graph/badge.svg)](https://app.codecov.io/gh/ar-puuk/pukRhelpers) [![R-CMD-check](https://github.com/ar-puuk/pukRhelpers/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/ar-puuk/pukRhelpers/actions/workflows/R-CMD-check.yaml)
-
+[![R-CMD-check](https://github.com/ar-puuk/pukRhelpers/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/ar-puuk/pukRhelpers/actions/workflows/R-CMD-check.yaml)
+[![Codecov test coverage](https://codecov.io/gh/ar-puuk/pukRhelpers/graph/badge.svg)](https://app.codecov.io/gh/ar-puuk/pukRhelpers)
 <!-- badges: end -->
 
 **pukRhelpers** is a collection of helper functions designed to streamline and simplify workflows in R. This package compiles useful utilities that I've used across various projects, providing convenience for data manipulation, analysis, and visualization tasks.
