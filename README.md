@@ -2,6 +2,12 @@
 
 [![License](https://img.shields.io/github/license/ar-puuk/pukRhelpers)](https://opensource.org/license/GPL-3-0)
 
+<!-- badges: start -->
+
+[![Codecov test coverage](https://codecov.io/gh/ar-puuk/pukRhelpers/graph/badge.svg)](https://app.codecov.io/gh/ar-puuk/pukRhelpers)
+[![R-CMD-check](https://github.com/ar-puuk/pukRhelpers/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/ar-puuk/pukRhelpers/actions/workflows/R-CMD-check.yaml)
+<!-- badges: end -->
+
 **pukRhelpers** is a collection of helper functions designed to streamline and simplify workflows in R. This package compiles useful utilities that I've used across various projects, providing convenience for data manipulation, analysis, and visualization tasks.
 
 ------------------------------------------------------------------------
@@ -32,6 +38,7 @@ pak::pak("ar-puuk/pukRhelpers")
 ```
 
 ### Install from `r-universe`
+
 ``` r
 install.packages('pukRhelpers', repos = 'https://ar-puuk.r-universe.dev')
 ```
@@ -48,7 +55,7 @@ Once you’ve installed the package, you can start using its functions immediate
 
 Here is an example of using one of the functions in `pukRhelpers`:
 
-```r
+``` r
 # Work in progress
 ```
 
