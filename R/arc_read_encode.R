@@ -8,7 +8,7 @@
 #' @param n_max Defaults to `Inf` or an option set with `options("arcgislayers.n_max" = <max records>)`. Maximum number of records to return.
 #' @param name_repair Default `"unique"`. See `vctrs::vec_as_names()` for details. If `name_repair = NULL` and `alias = "replace"` may include invalid names.
 #' @param crs the spatial reference to be returned. If the CRS is different than the CRS for the input FeatureLayer, a transformation will occur server-side. Ignored if x is a `Table`.
-#' @param ... Additional arguments passed to `arc_select()` if URL is a `FeatureLayer` or `Table` or `arc_raster()` if URL is an `ImageLayer.`
+#' @param ... Additional arguments passed to `arcgislayers::arc_select()` if URL is a `FeatureLayer` or `Table` or `arcgislayers::arc_raster()` if URL is an `ImageLayer.`
 #' @param fields Default `NULL` a character vector of the field names to returned. By default all fields are returned. Ignored if `col_names` is supplied.
 #' @param alias Use of field alias values. Default `c("drop", "label", "replace")`,. There are three options:
 #'   - `"drop"`, field alias values are ignored.
@@ -21,7 +21,7 @@
 #'   - `TRUE`: encode _all_ fields that have coded-value domains.
 #'   - Specific field or list of fields to replace. Fields that do not have coded value domains are ignored.
 #' @param codes Character scalar, one of `"replace"` or `"label"`. Passed
-#'   through to `encode_field_values()` to control whether domain labels
+#'   through to `arcgislayers::encode_field_values()` to control whether domain labels
 #'   replace the raw codes or just attach as an attribute.
 #'
 #' @return If `url` is an `ImageServer`, a `SpatRaster`; otherwise an `sf` or
@@ -37,14 +37,14 @@ arc_read_encode <- function (
     ...,
     fields = NULL,
     alias = "drop",
-    token = arcgislayers::arc_token(),
+    token = arcgisutils::arc_token(),
     encode_field_values = FALSE,
     codes = c("replace", "label")
 ) {
   # validate url and basic args
-  check_string(url, allow_empty = FALSE)
-  check_character(fields, allow_null = TRUE)
-  check_character(col_select, allow_null = TRUE)
+  chk::chk_string(url, allow_empty = FALSE)
+  chk::chk_character(fields, allow_null = TRUE)
+  chk::chk_character(col_select, allow_null = TRUE)
 
   # validate alias
   alias <- alias %||% "drop"
@@ -67,7 +67,7 @@ arc_read_encode <- function (
 
   # validate token
   if (!is.null(token)) {
-    obj_check_token(token)
+    arcgisutils::obj_check_token(token)
   }
 
   # validate field encoding arguments
@@ -113,15 +113,15 @@ arc_read_encode <- function (
     col_names <- NULL
     lifecycle::deprecate_soft(
       "deprecated",
-      what = "arc_read(col_names = \"can't be alias\")",
-      with = "arc_read(alias = \"replace\")"
+      what = "arcgislayers::arc_read(col_names = \"can't be alias\")",
+      with = "arcgislayers::arc_read(alias = \"replace\")"
     )
   }
 
   if (identical(alias, "drop") || is.character(col_names) || isFALSE(col_names)) {
     layer <- arcgislayers:::set_col_names(.data = layer, col_names = col_names, name_repair = name_repair)
   } else {
-    layer <- arcgislayers:::set_layer_aliases(.data = layer, .layer = x, name_repair = name_repair, alias = alias)
+    layer <- arcgislayers::set_layer_aliases(.data = layer, .layer = x, name_repair = name_repair, alias = alias)
   }
 
   # Optional domain encoding

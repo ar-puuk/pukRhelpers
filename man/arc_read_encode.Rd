@@ -14,7 +14,7 @@ arc_read_encode(
   ...,
   fields = NULL,
   alias = "drop",
-  token = arcgislayers::arc_token(),
+  token = arcgisutils::arc_token(),
   encode_field_values = FALSE,
   codes = c("replace", "label")
 )
@@ -36,7 +36,7 @@ arc_read_encode(
 
 \item{crs}{the spatial reference to be returned. If the CRS is different than the CRS for the input FeatureLayer, a transformation will occur server-side. Ignored if x is a \code{Table}.}
 
-\item{...}{Additional arguments passed to \code{arc_select()} if URL is a \code{FeatureLayer} or \code{Table} or \code{arc_raster()} if URL is an \code{ImageLayer.}}
+\item{...}{Additional arguments passed to \code{arcgislayers::arc_select()} if URL is a \code{FeatureLayer} or \code{Table} or \code{arcgislayers::arc_raster()} if URL is an \code{ImageLayer.}}
 
 \item{fields}{Default \code{NULL} a character vector of the field names to returned. By default all fields are returned. Ignored if \code{col_names} is supplied.}
 
@@ -58,7 +58,7 @@ vectors.
 }}
 
 \item{codes}{Character scalar, one of \code{"replace"} or \code{"label"}. Passed
-through to \code{encode_field_values()} to control whether domain labels
+through to \code{arcgislayers::encode_field_values()} to control whether domain labels
 replace the raw codes or just attach as an attribute.}
 }
 \value{
