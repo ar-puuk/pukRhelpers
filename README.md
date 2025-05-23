@@ -4,8 +4,8 @@
 
 <!-- badges: start -->
 
-[![Codecov test coverage](https://codecov.io/gh/ar-puuk/pukRhelpers/graph/badge.svg)](https://app.codecov.io/gh/ar-puuk/pukRhelpers)
-[![R-CMD-check](https://github.com/ar-puuk/pukRhelpers/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/ar-puuk/pukRhelpers/actions/workflows/R-CMD-check.yaml)
+[![Codecov test coverage](https://codecov.io/gh/ar-puuk/pukRhelpers/graph/badge.svg)](https://app.codecov.io/gh/ar-puuk/pukRhelpers) [![R-CMD-check](https://github.com/ar-puuk/pukRhelpers/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/ar-puuk/pukRhelpers/actions/workflows/R-CMD-check.yaml)
+
 <!-- badges: end -->
 
 **pukRhelpers** is a collection of helper functions designed to streamline and simplify workflows in R. This package compiles useful utilities that I've used across various projects, providing convenience for data manipulation, analysis, and visualization tasks.
@@ -66,14 +66,15 @@ For a full list of functions and examples, check out the package [documentation]
 -   `convert_fgb_to_gdb()`: Convert FlatGeoBuf (FGB) Files to Geodatabase (GDB) Layers
 -   `convert_xml_html()`: Convert XML to HTML using XSLT
 -   `extract_html_table()`: Extract table following a specific anchor tag by name attribute
--   `geo_split_lines()`: Split Lines by Maximum Length (Credit: [dblodgett-usgs](https://gist.github.com/dblodgett-usgs))
+-   `geo_split_lines()`: Split Lines by Maximum Length (Credit: [dblodgett-usgs](https://gist.github.com/dblodgett-usgs/cf87392c02d73f1b7d16153d2b66a8f3))
 -   `load_esri()`: Load and Query an ESRI Feature Service Layer
--   `load_kml_sf()`: Convert KML to Simple Features (sf) Object with Preserved Attributes (Credit: [mdsumner](https://gist.github.com/mdsumner))
+-   `load_kml_sf()`: Convert KML to Simple Features (sf) Object with Preserved Attributes (Credit: [mdsumner](https://gist.github.com/mdsumner/1469b4ab53058e33bafc4fd9cda454eb))
 -   `load_packages()`: Load and Install R Packages
 -   `load_ugrc_data()`: Load Dataset from UGRC SGID
 -   `load_ugrc_vars()`: Load List of Datasets from UGRC SGID
--   `st_aggregate()`: Aggregate sf objects (Credit: [rCarto](https://gist.github.com/rCarto))
--   `st_split_lines()`: Split Lines by Maximum Length (Credit: [dblodgett-usgs](https://gist.github.com/dblodgett-usgs))
+-   `st_aggregate()`: Aggregate sf objects (Credit: [rCarto](https://gist.github.com/rCarto/bb47aff0a02e808d2bf64f2d8c5db7d8))
+-   `st_split_lines()`: Split Lines by Maximum Length (Credit: [dblodgett-usgs](https://gist.github.com/dblodgett-usgs/cf87392c02d73f1b7d16153d2b66a8f3))
+-   `arc_read_encode()`: Enables `arcgislayers::encode_field_value()` as an internal argument to the `arcgislayers::arc_read()` to avoid unnecessary objects in the environment and simpler workflow. (See [arcgislayers/237](https://github.com/R-ArcGIS/arcgislayers/issues/237) and [arcgislayers/234](https://github.com/R-ArcGIS/arcgislayers/discussions/234))
 
 ## **Contributing**
 
