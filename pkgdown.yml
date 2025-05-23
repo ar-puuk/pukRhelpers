@@ -1,8 +1,8 @@
 pandoc: 3.1.11
-pkgdown: 2.1.1
+pkgdown: 2.1.2
 pkgdown_sha: ~
 articles: {}
-last_built: 2025-02-23T19:11Z
+last_built: 2025-05-23T02:38Z
 urls:
   reference: https://ar-puuk.github.io/pukRhelpers/reference
   article: https://ar-puuk.github.io/pukRhelpers/articles
