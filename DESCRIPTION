@@ -16,7 +16,6 @@ Imports:
     arcgislayers,
     arcgisutils,
     base,
-    chk,
     cli,
     DBI,
     dplyr,

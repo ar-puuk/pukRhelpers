@@ -42,9 +42,9 @@ arc_read_encode <- function (
     codes = c("replace", "label")
 ) {
   # validate url and basic args
-  chk::chk_string(url, allow_empty = FALSE)
-  chk::chk_character(fields, allow_null = TRUE)
-  chk::chk_character(col_select, allow_null = TRUE)
+  arcgisutils:::check_string(url, allow_empty = FALSE)
+  arcgisutils:::check_character(fields, allow_null = TRUE)
+  arcgisutils:::check_character(col_select, allow_null = TRUE)
 
   # validate alias
   alias <- alias %||% "drop"
