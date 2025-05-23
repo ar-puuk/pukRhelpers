@@ -1,8 +1,7 @@
 # **pukRhelpers**
 
-[![License](https://img.shields.io/github/license/ar-puuk/pukRhelpers)](https://opensource.org/license/GPL-3-0)
-
 <!-- badges: start -->
+[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 [![R-CMD-check](https://github.com/ar-puuk/pukRhelpers/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/ar-puuk/pukRhelpers/actions/workflows/R-CMD-check.yaml)
 [![Codecov test coverage](https://codecov.io/gh/ar-puuk/pukRhelpers/graph/badge.svg)](https://app.codecov.io/gh/ar-puuk/pukRhelpers)
 <!-- badges: end -->
